@@ -9,9 +9,9 @@ app.get('/article-one',function(req,res){
     res.send('this is my article one any where it is getting' );
 });
 
-app.get('/article-one',function(req,res){
+/*app.get('/article-one',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
+});*/
 
 app.get('/article-two',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
