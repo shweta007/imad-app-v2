@@ -1,5 +1,5 @@
 console.log('Loaded!');
 
 
-var para=document.getElementById('p1');
-para.innerHTML='this is my document.';
+var paraa=document.getElementById('p1');
+paraa.innerHTML='this is my document.';
