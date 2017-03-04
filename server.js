@@ -23,7 +23,7 @@ app.get('/ui/main.js',function(req,res){
 app.get('/ui/registration.html',
 function(req,res)
 {
-    res.sendFile(path.join(_dirname,'ui','registration.html'));
+    res.sendFile(path.join(__dirname,'ui','registration.html'));
 }
 );
 
