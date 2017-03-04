@@ -20,7 +20,7 @@ app.get('/ui/main.js',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/ui/registration.html',
+app.get('/ui/registration',
 function(req,res)
 {
     res.sendFile(path.join(__dirname,'ui','registration.html'));
