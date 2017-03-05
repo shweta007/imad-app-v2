@@ -27,6 +27,14 @@ function(req,res)
 }
 );
 
+
+app.get('/ui/comment',
+function(req,res)
+{
+    res.sendFile(path.join(__dirname,'ui','comment.html'));
+}
+);
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
