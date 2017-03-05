@@ -40,7 +40,7 @@ color: red;
 div {
     background-color: lightgrey;
     width: 300px;
-    border: 10px solid green;
+    border: 5px solid green;
     padding: 25px;
     margin: 25px;
 }
