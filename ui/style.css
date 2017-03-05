@@ -11,6 +11,11 @@ body {
 
 .header{
     text-align:center;
+    background-color: lightgrey;
+    width: 200px;
+    border: 10px solid green;
+    padding: 25px;
+    margin: 25px;
 }
 .text-big {
     font-size: 300%;
@@ -37,9 +42,5 @@ color: red;
 }
 
 div {
-    background-color: lightgrey;
-    width: 200px;
-    border: 10px solid green;
-    padding: 25px;
-    margin: 25px;
+    
 }
