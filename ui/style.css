@@ -8,6 +8,10 @@ body {
     text-align: center;
 }
 
+
+.header{
+    text-align:center;
+}
 .text-big {
     font-size: 300%;
 }
