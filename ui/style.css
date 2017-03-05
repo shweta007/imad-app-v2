@@ -29,27 +29,14 @@ p{
 color: red;
 }
 
-#rcorners1 {
-    border-radius: 5px;
-    background: #73AD21;
- 
-    width: 200px;
-    height: 30px; 
-}
 
-.rform {
-    margin:auto;
-    background-color: lightgrey;
-    width: 300px;
-    border: 5px solid green;
-    padding: 25px;
-    margin: 25px;
-}
+
+
 h2
 {
 text-align:center;
 }
 
-#createaccount{
-    
+.form{
+	background:#f1f1f1; width:470px; margin:0 auto; padding-left:50px; padding-top:20px;
 }
