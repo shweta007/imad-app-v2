@@ -38,8 +38,8 @@ color: red;
 
 div {
     background-color: lightgrey;
-    width: 300px;
-    border: 25px solid green;
+    width: 200px;
+    border: 10px solid green;
     padding: 25px;
     margin: 25px;
 }
