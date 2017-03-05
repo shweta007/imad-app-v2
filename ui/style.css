@@ -37,7 +37,7 @@ color: red;
     height: 30px; 
 }
 
-div {
+#rform {
     background-color: lightgrey;
     width: 300px;
     border: 5px solid green;
