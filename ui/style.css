@@ -25,13 +25,6 @@ body {
     height: 200px;
 }
 
-p{
-color: red;
-}
-
-
-
-
 h2
 {
 text-align:center;
@@ -40,3 +33,5 @@ text-align:center;
 .form{
 	background:#f1f1f1; width:470px; margin:0 auto; padding-left:50px; padding-top:20px;
 }
+
+.form p.contact { font-size: 12px; margin:0px 0px 10px 0;line-height: 14px; font-family:Arial, Helvetica;}
