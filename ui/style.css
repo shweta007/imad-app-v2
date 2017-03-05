@@ -35,3 +35,11 @@ color: red;
     width: 200px;
     height: 30px; 
 }
+
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
