@@ -38,7 +38,7 @@ color: red;
 }
 
 #rform {
-    position:relative;
+    margin:auto;
     background-color: lightgrey;
     width: 300px;
     border: 5px solid green;
@@ -48,4 +48,8 @@ color: red;
 h2
 {
 text-align:center;
+}
+
+#createaccount{
+    
 }
