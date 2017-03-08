@@ -20,6 +20,7 @@ request.onreadystatechange = function() {
       
     }
 };
-};
+
 request.open('GET', 'http://shweta007.imad.hasura-app.io/ui/comment', true);
 request.send(null);
+};
