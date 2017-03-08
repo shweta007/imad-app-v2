@@ -13,10 +13,10 @@ var request= new XMLHttpRequest();
 request.onreadystatechange = function() {
     if (request.readyState == 4 && request.status == 200) {
        // Typical action to be performed when the document is ready:
-       var text = request.responseText;
+       var texts = request.responseText;
       var holdtext= document.getElementById("ctext");
       
-      holdtext.innerHTML=text.toString();
+      holdtext.innerHTML=texts.toString();
       
     }
 };
