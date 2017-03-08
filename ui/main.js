@@ -9,9 +9,9 @@ var btn=document.getElementById("btnsubmit");
  btn.onclick=function()
  {
 
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+
+request.onreadystatechange = function() {
+    if (request.readyState == 4 && request.status == 200) {
        // Typical action to be performed when the document is ready:
        var text = request.responseText;
       var holdtext= document.getElementById("ctext");
