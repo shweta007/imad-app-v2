@@ -21,5 +21,5 @@ xhttp.onreadystatechange = function() {
     }
 };
 };
-xhttp.open("GET", "http://shweta007.imad.hasura-app.io/ui/comment", true);
-xhttp.send();
+request.open("GET", "http://shweta007.imad.hasura-app.io/ui/comment", true);
+request.send();
