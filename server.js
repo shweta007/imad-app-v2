@@ -5,6 +5,14 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var names=[];
+app.get('/comment',function(req,res){
+    var name=req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
+
 app.get('/article-one',function(req,res){
     res.send('this is my article one any where it is getting' );
 });
