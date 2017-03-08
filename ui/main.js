@@ -14,9 +14,9 @@ request.onreadystatechange = function() {
     if (request.readyState == 4 && request.status == 200) {
        // Typical action to be performed when the document is ready:
        var texts = request.responseText;
-      var holdtext= document.getElementById("ctext");
+      var span= document.getElementById("holdtext");
       
-      holdtext.innerHTML=texts.toString();
+      span.innerHTML=texts.toString();
       
     }
 };
