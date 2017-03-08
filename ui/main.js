@@ -8,7 +8,7 @@ paraa.innerHTML ='this is my document';*/
 var btn=document.getElementById("btnsubmit");
  btn.onclick=function()
  {
-
+var request= new XMLHttpRequest();
 
 request.onreadystatechange = function() {
     if (request.readyState == 4 && request.status == 200) {
@@ -21,5 +21,5 @@ request.onreadystatechange = function() {
     }
 };
 };
-request.open("GET", "http://shweta007.imad.hasura-app.io/ui/comment", true);
-request.send();
+request.open('GET', 'http://shweta007.imad.hasura-app.io/ui/comment', true);
+request.send(null);
