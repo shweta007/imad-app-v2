@@ -23,9 +23,9 @@ request.onreadystatechange = function() {
        {
            list += '<li>' + names[i] + '</li>';
        }
-      var span= document.getElementById("holdtext");
+      var ul= document.getElementById("holdtext");
       
-      span.innerHTML=list;
+      ul.innerHTML=list;
         }
     }
 };
