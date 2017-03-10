@@ -11,14 +11,17 @@ var btn=document.getElementById("btnsubmit");
 var request= new XMLHttpRequest();
 
 request.onreadystatechange = function() {
-    if (request.readyState == 4 && request.status == 200) {
+    if (request.readyState == XMLHttpRequest.DONE) {
+        
+        if(request.status===200){
        // Typical action to be performed when the document is ready:
        var texts = request.responseText;
        texts=JSON.parse(texts);
+       //var span='';
       var span= document.getElementById("holdtext");
       
-      span.innerHTML=texts.toString();
-      
+      span.innerHTML=texts;
+        }
     }
 };
 var nameInput= document.getElementById("ctext");
