@@ -7,8 +7,8 @@ app.use(morgan('combined'));
 
 
 var names=[];
-app.get('/comment',function(req,res){
-    var name=req.query.name;
+app.get('/comment/:name',function(req,res){
+    var name=req.params.name;
     names.push(name);
     res.send(JSON.stringify(names));
 });
