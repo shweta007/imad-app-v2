@@ -21,8 +21,8 @@ request.onreadystatechange = function() {
       
     }
 };
-var names= document.getElementById("ctext");
-var cname=names.value;
-request.open('GET', 'http://shweta007.imad.hasura-app.io/ui/comment?name='+cname , true);
+var nameInput= document.getElementById("ctext");
+var name=nameInput.value;
+request.open('GET', 'http://shweta007.imad.hasura-app.io/ui/comment?name='+name , true);
 request.send(null);
 };
