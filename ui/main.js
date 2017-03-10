@@ -15,12 +15,12 @@ request.onreadystatechange = function() {
         
         if(request.status===200){
        // Typical action to be performed when the document is ready:
-       var texts = request.responseText;
-       texts=JSON.parse(texts);
-       var span='';
-      var spana= document.getElementById("holdtext");
+       var names = request.responseText;
+       names=JSON.parse(names);
+       //var list='';
+      var span= document.getElementById("holdtext");
       
-      spana.innerHTML=texts;
+      span.innerHTML=name;
         }
     }
 };
