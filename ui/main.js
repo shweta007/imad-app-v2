@@ -8,29 +8,30 @@ paraa.innerHTML ='this is my document';*/
 var btn=document.getElementById("btnsubmit");
  btn.onclick=function()
  {
-var request= new XMLHttpRequest();
+//var request= new XMLHttpRequest();
 
-request.onreadystatechange = function() {
-    if (request.readyState == XMLHttpRequest.DONE) {
+//request.onreadystatechange = function() {
+    //if (request.readyState == XMLHttpRequest.DONE) {
         
-        if(request.status===200){
+       // if(request.status===200){
        // Typical action to be performed when the document is ready:
-       var names = request.responseText;
-       names=JSON.parse(names);
+      // var names = request.responseText;
+      // names=JSON.parse(names);
        var list='';
        
        for(var i=0; i<names.length;i++)
        {
-           list += '<li>' + names[i] + '</li>';
+          list += '<li>' + names[i] + '</li>';
        }
-      var ul= document.getElementById("holdtext");
+     // var ul= document.getElementById("holdtext");
       
-      ul.innerHTML=list;
-        }
-    }
+    //  ul.innerHTML=list;
+    //    }
+   // }
 };
+
 var nameInput= document.getElementById("ctext");
 var name=nameInput.value;
-request.open('GET', 'http://shweta007.imad.hasura-app.io/ui/comment?name='+name , true);
-request.send(null);
+//request.open('GET', 'http://shweta007.imad.hasura-app.io/ui/comment?name='+name , true);
+//request.send(null);
 };
