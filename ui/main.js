@@ -3,7 +3,8 @@ console.log('Loaded!');
 
 /*var paraa=document.getElementById('p1');
 paraa.innerHTML ='this is my document';*/
-
+var nameInput= document.getElementById("ctext");
+var name=nameInput.value;
 
 var btn=document.getElementById("btnsubmit");
  btn.onclick=function()
@@ -23,15 +24,14 @@ var btn=document.getElementById("btnsubmit");
        {
           list += '<li>' + names[i] + '</li>';
        }
-     // var ul= document.getElementById("holdtext");
+      var ul= document.getElementById("holdtext");
       
-    //  ul.innerHTML=list;
+      ul.innerHTML=list;
     //    }
    // }
-};
 
-var nameInput= document.getElementById("ctext");
-var name=nameInput.value;
+
+
 //request.open('GET', 'http://shweta007.imad.hasura-app.io/ui/comment?name='+name , true);
 //request.send(null);
 };
