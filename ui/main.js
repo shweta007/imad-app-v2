@@ -17,10 +17,15 @@ request.onreadystatechange = function() {
        // Typical action to be performed when the document is ready:
        var names = request.responseText;
        names=JSON.parse(names);
-       //var list='';
+       var list='';
+       
+       for(var i=0; i<names.length;i++)
+       {
+           list += '<li>' + names[i] + '</li>';
+       }
       var span= document.getElementById("holdtext");
       
-      span.innerHTML=name;
+      span.innerHTML=list;
         }
     }
 };
