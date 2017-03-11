@@ -3,8 +3,7 @@ console.log('Loaded!');
 
 /*var paraa=document.getElementById('p1');
 paraa.innerHTML ='this is my document';*/
-var nameInput= document.getElementById("ctext");
-var name=nameInput.value;
+
 
 var btn=document.getElementById("btnsubmit");
  btn.onclick=function()
@@ -31,7 +30,8 @@ request.onreadystatechange = function() {
     }
 
 };
-
+var nameInput= document.getElementById("ctext");
+var name=nameInput.value;
 request.open('GET', 'http://shweta007.imad.hasura-app.io/comment?name='+ name , true);
 request.send(null);
 };
