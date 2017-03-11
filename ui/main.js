@@ -22,7 +22,7 @@ var btn=document.getElementById("btnsubmit");
        var names=['name1','name2'];
        for(var i=0; i<names.length;i++)
        {
-          list += '<li>' + names[i] + '</li>';
+          list += '<span>' + names[i] + '</span>';
        }
       var ul= document.getElementById("holdtext");
       
