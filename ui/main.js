@@ -21,9 +21,9 @@ request.onreadystatechange = function() {
       // var names=['name1','name2'];
        for(var i=0; i<names.length;i++)
        {
-          list += '<br>' + '<span>' + names[i] + '</span>' + '<br>';
+          list += '<span>' + names[i] + '</span>' + '<br>';
        }
-      var ul= '<br>'+ document.getElementById("holdtext");
+      var ul= document.getElementById("holdtext");
       
       ul.innerHTML=  names;
         }
