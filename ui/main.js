@@ -23,7 +23,7 @@ request.onreadystatechange = function() {
        {
           list += '<br>' + '<span>' + names[i] + '</span>' + '<br>';
        }
-      var ul= document.getElementById("holdtext");
+      var ul= '<br>'+ document.getElementById("holdtext");
       
       ul.innerHTML=  names;
         }
