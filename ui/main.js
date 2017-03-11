@@ -17,7 +17,7 @@ request.onreadystatechange = function() {
         if(request.status===200){
        // Typical action to be performed when the document is ready:
        var names = request.responseText;
-       names=JSON.parse(names);
+       //names=JSON.parse(names);
       // var list='';
       // var names=['name1','name2'];
       // for(var i=0; i<names.length;i++)
