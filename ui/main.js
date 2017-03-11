@@ -16,16 +16,16 @@ request.onreadystatechange = function() {
         if(request.status===200){
        // Typical action to be performed when the document is ready:
        var names = request.responseText;
-       //names=JSON.parse(names);
-      // var list='';
+       names=JSON.parse(names);
+       var list;
       // var names=['name1','name2'];
-      // for(var i=0; i<names.length;i++)
-      // {
-      //    list += '<br>' + '<span>' + names[i] + '</span>' + '<br>';
-      // }
+       for(var i=0; i<names.length;i++)
+       {
+          list += '<br>' + '<span>' + names[i] + '</span>' + '<br>';
+       }
       var ul= document.getElementById("holdtext");
       
-      ul.innerHTML= '<br>'+ names + '<br>';
+      ul.innerHTML=  names;
         }
     }
 
