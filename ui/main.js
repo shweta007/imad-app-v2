@@ -25,7 +25,7 @@ request.onreadystatechange = function() {
        }
       var div= document.getElementById("holdtext");
       
-      div.innerHTML=  '<dib>'+ names + '</div>';
+      div.innerHTML=  '<div>'+ names + '</div>' + '<br>';
         }
     }
 
