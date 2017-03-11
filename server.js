@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var names=[];
-app.get('/comment/:name',function(req,res){
+app.get('/comment',function(req,res){
     var name=req.params.name;
     names.push(name);
     res.send(JSON.stringify(names));
