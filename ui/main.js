@@ -23,9 +23,9 @@ request.onreadystatechange = function() {
        {
           list +=names[i] ;
        }
-      var ul= document.getElementById("holdtext");
+      var div= document.getElementById("holdtext");
       
-      ul.innerHTML=  names;
+      div.innerHTML=  '<dib>'+ names + '</div>';
         }
     }
 
