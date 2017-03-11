@@ -32,6 +32,6 @@ request.onreadystatechange = function() {
 
 };
 
-request.open('GET', 'http://shweta007.imad.hasura-app.io/comment?name='+name , true);
+request.open('GET', 'http://shweta007.imad.hasura-app.io/comment?name='+ name , true);
 request.send(null);
 };
