@@ -31,7 +31,7 @@ app.get('/article-one',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });*/
 
-var pool = new Pool(config);
+var pool  = new Pool(config);
 app.get('/test-db',function(req,res){
     
     pool.query('SELECT * from test',function(err,result)
