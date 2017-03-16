@@ -23,6 +23,93 @@ app.get('/comment',function(req,res){
     res.send(JSON.stringify(names));
 });
 
+
+var articles={
+    
+'article-one':{
+                title:'Article One',
+                heading:'Article One',
+                date:'Feb 5,2017',
+                content:`
+                <p>
+                this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
+                </p>
+                <p>
+                this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
+                </p>
+                <p>
+                this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
+                </p>`
+    
+    
+},
+'article-two':{
+                title:'Article Two',
+                heading:'Article Two',
+                date:'Feb 5,2017',
+                content:`
+                <p>
+                this is my second article  . .
+                </p>`
+    
+},
+'article-three':{
+                title:'Article Three',
+                heading:'Article Three',
+                date:'Feb 5,2017',
+                content:`
+                <p>
+                this is my third article  . .
+                </p>`
+    }
+};
+
+function createTemplate(data){
+    var title=data.title;
+    var heading=data.heading;
+    var date=data.date;
+    var content=data.content;
+var htmlTemplate=`<html>
+    <head>
+        <title>
+            ${title}
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1 "/>
+        <link href="/ui/style.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+    <div class="container">
+        <div>
+        <a href="/">Home</a>   
+        </div>
+        <div>
+        <h3>
+        ${heading}
+        </h3>
+        </div>
+        <div>
+        ${date}
+        </div>
+        
+        <div>
+        ${content}
+        </div>
+    
+    </div>
+     </body>
+</html>
+
+    
+`;
+return htmlTemplate;
+}
+
+app.get('/:articleName',function(req,res){
+    var articleName=req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
+});
+
 app.get('/article-one',function(req,res){
     res.send('this is my article one any where it is getting' );
 });
