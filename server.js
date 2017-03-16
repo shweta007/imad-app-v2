@@ -10,7 +10,7 @@ var config={
     database:'shweta007',
     host:'db.imad.hasura-app.io',
     port:'5432',
-    password: process.env.db_PASSWORD
+    password: db-shweta007-4023
     
 };
 
