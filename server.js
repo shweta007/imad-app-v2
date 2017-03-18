@@ -210,7 +210,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/Picture 066.jpg', function (req, res) {
+app.get('imad-app-v2/ui/Picture 066.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Picture 066.jpg'));
 });
 
