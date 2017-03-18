@@ -129,7 +129,7 @@ app.get('/articles/:articleName',function(req,res)
 
     });
     
-});
+
 
 app.get('/article-one',function(req,res){
     res.send('this is my article one any where it is getting' );
