@@ -211,7 +211,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('imad-app-v2/ui/shweta.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Picture 066.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'shweta.jpg'));
 });
 
 
