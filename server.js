@@ -125,6 +125,10 @@ app.get('/articles/:articleName',function(req,res)
             }
         }
     });
+    
+
+    });
+    
 });
 
 app.get('/article-one',function(req,res){
