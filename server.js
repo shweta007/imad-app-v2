@@ -5,7 +5,7 @@ var crypto=require('crypto');
 var app = express();
 var bodyParser=require('body-parser');
 app.use(morgan('combined'));
-app.use(bodyParser.JSON());
+app.use(bodyParser.json());
 
 
 var Pool=require('pg').Pool;
