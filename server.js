@@ -189,7 +189,7 @@ pool.query('select* FROM "user" where username=$1',[username],function(err,resul
     if(err){
         res.status(500).send(err.toString());
      }   else{
-         if(result.rows.length==0){
+         if(result.rows.length===0){
         res.send(403).send("user/password is invalid");
       }  else{
             var dbString=result.rows[0].password;
