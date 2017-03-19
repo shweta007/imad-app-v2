@@ -11,13 +11,13 @@ var btn=document.getElementById("submit_btn");
 var request= new XMLHttpRequest();
 
 request.onreadystatechange = function() {
-    if (request.readyState == XMLHttpRequest.DONE) {
+    if (request.readyState === XMLHttpRequest.DONE) {
         //take action
         if(request.status===200){
             alert("logged in successfully");
-        }else if(request.status==403)
+        }else if(request.status===403)
         {alert("user name/password is incorrect");
-        } else if(request.status==500){
+        } else if(request.status===500){
             alert("something went wrong on server");
         }
         }
