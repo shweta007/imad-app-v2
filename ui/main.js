@@ -5,7 +5,7 @@ console.log('Loaded!');
 paraa.innerHTML ='this is my document';*/
 
 
-var btn=document.getElementById("btnsubmit");
+var btn=document.getElementById("submit_btn");
  btn.onclick=function()
  {
 var request= new XMLHttpRequest();
