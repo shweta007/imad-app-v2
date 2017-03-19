@@ -183,7 +183,7 @@ app.post('/create-user',function(req,res){
 });
 app.post('/login',function(req,res){
     var username=req.body.username;
-    var password= req.body.password;
+    //var password= req.body.password;
 
 pool.query('select* FROM "user1" where username=$1',[username],function(err,result){
     if(err){
