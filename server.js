@@ -109,6 +109,17 @@ var htmlTemplate=`<html>
 return htmlTemplate;
 }
 
+var counter=0;
+app.get('/counter',function(){
+    counter=counter=1;
+    res.send(counter.toString());
+});
+
+
+
+
+
+
 app.get('/:articleName',function(req,res){
     var articleName=req.params.articleName;
   res.send(createTemplate(articles[articleName]));
@@ -207,12 +218,7 @@ pool.query('select* FROM "user1" where username=$1',[username],function(err,resu
 });
 });
 
-var counter=0;
-app.get('/ui/counter',function(req,res){
-    counter=counter+1;
-res.send(counter.toString());
 
-});
 app.get('/hash/:input',function(req,res){
     var hashedString=hash(req.params.input,'this-is-my-name');
     res.send(hashedString);
